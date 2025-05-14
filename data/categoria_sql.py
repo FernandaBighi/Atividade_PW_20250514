@@ -1,0 +1,17 @@
+CRIAR_TABELA_CATEGORIA = """
+CREATE TABLE IF NOT EXISTS categorias (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+nome TEXT NOT NULL)
+"""
+
+INSERIR = """
+INSERT INTO categorias (nome) 
+VALUES (?)
+"""
+
+OBTER_TODOS = """
+SELECT 
+id, nome
+FROM categorias
+ORDER BY nome
+""" 
